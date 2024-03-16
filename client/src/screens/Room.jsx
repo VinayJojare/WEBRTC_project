@@ -3,9 +3,9 @@ import { useSocket } from '../context/SocketProvider';
 import ReactPlayer from 'react-player';
 import peer from '../service/Peer';
 import Peer from '../service/Peer';
+import "./room.css"; 
 
 const Roompage = () => {
-
 
     const socket = useSocket();
 
@@ -114,7 +114,7 @@ const Roompage = () => {
 
 
     return(
-        <div className="room-container">
+    <div className="room-container">
     <h1>Welcome to the Virtual Room</h1>
     <p>Status: {remoteSocketId ? 'Connected' : 'No one in Room'}</p>
 
